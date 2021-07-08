@@ -1,7 +1,26 @@
-<project>
-  <modelVersion>4.0.0</modelVersion>
+<?xml version="1.0" encoding="UTF-8"?>
 
-  <groupId>Sonar</groupId>
-  <artifactId>sonar-jenkins</artifactId>
-  <version>1</version>
-</project>
+<web-app version="2.5" 
+
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+  <welcome-file-list>
+
+    <welcome-file>index.jsp</welcome-file>
+
+  </welcome-file-list>
+
+<listener>
+
+<listener-class>com.javatpoint.MyListener</listener-class>
+
+</listener>
+
+</web-app>
+
