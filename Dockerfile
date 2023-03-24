@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/azure-app-service/java:11-java11_stable
+FROM openjdk:17-jdk-slim-buster
 
 ENV PORT 80
 EXPOSE 80
