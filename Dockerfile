@@ -1,4 +1,4 @@
-FROM openjdk:21-ea-12-slim-bullseye
+FROM openjdk:21-slim-buster
 
 ENV PORT 80
 EXPOSE 80
