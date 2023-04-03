@@ -1,4 +1,4 @@
-FROM openjdk:latest
+FROM openjdk:17-jdk-oracle
 
 ENV PORT 80
 EXPOSE 80
