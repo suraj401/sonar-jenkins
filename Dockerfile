@@ -1,4 +1,4 @@
-FROM openjdk:17-alpine3.14
+FROM openjdk:latest
 
 ENV PORT 80
 EXPOSE 80
