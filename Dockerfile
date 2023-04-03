@@ -1,4 +1,4 @@
-FROM openjdk:21-slim-bullseye
+FROM openjdk:17.0.1-jdk-oracle
 
 ENV PORT 80
 EXPOSE 80
