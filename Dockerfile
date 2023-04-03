@@ -1,4 +1,4 @@
-FROM ubi8/openjdk-17
+FROM openjdk:ubi8/openjdk-17
 
 ENV PORT 80
 EXPOSE 80
