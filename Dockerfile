@@ -1,4 +1,4 @@
-FROM openjdk:ubi8/openjdk-17
+FROM openjdk:17-alpine
 
 ENV PORT 80
 EXPOSE 80
