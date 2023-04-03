@@ -1,4 +1,4 @@
-FROM openjdk:17-jdk-oracle
+FROM openjdk:17-jdk-slim-buster
 
 ENV PORT 80
 EXPOSE 80
