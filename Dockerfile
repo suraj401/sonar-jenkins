@@ -1,6 +1,17 @@
-FROM eclipse-temurin:17-jdk-alpine
+FROM node:16.15.1-alpine3.16
 
-ENV PORT 80
-EXPOSE 80
 
-ENTRYPOINT ["java", "-Dserver.port=80", "-jar", "/tmp/appservice/parkingpage.jar"]
+
+COPY --chown=node:node package.json ./
+USER node
+RUN npm install --legacy-peer-deps
+COPY --chown=node:node . .
+
+
+
+RUN npm run build --debug
+
+
+#USER node
+EXPOSE 5001
+CMD [ "node", "server.js" ]
