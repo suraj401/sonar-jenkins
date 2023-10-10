@@ -1,4 +1,4 @@
-FROM node:16.20-alpine3.16
+FROM openjdk:17-jdk-slim-buster
 
 
 
